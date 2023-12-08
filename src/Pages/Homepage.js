@@ -34,7 +34,7 @@ const Homepage = ({ setGameStarted }) => {
   <img src='./public/Images/Premier.png' alt='Premier League' />
 </button>
 
-<button onClick={() => handleStartGame('Championship')} className='bg-blue-500 font-mono text-white px-5 py-2 rounded transition-colors duration-300 hover:bg-blue-600 my-2'>
+<button onClick={() => handleStartGame('Championship (Ipswich Town)')} className='bg-blue-500 font-mono text-white px-5 py-2 rounded transition-colors duration-300 hover:bg-blue-600 my-2'>
   Ipswich
   <img src='./public/Images/championship.png' alt='Championship' />
 </button>

@@ -29,17 +29,17 @@ const footballersData = [
   { _id: '27', name: 'Mac Allister', nationality: 'Argentina', position: 'Midfielder', league: 'Premier League', club: 'Liverpool'},
   { _id: '28', name: 'Eriksen', nationality: 'Denmark', position: 'Midfielder', league: 'Premier League', club: 'Manchester United'},
   
-  { _id: '29', name: 'Baggott', nationality: 'B', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
-  { _id: '29', name: 'Chaplin', nationality: 'C', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
-  { _id: '29', name: 'Morsy', nationality: 'M', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
-  { _id: '29', name: 'Broadhead', nationality: 'B', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
-  { _id: '29', name: 'Burns', nationality: 'B', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
-  { _id: '29', name: 'Clarke', nationality: 'C', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
-  { _id: '29', name: 'Davis', nationality: 'D', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
-  { _id: '29', name: 'Walton', nationality: 'W', club: 'Ipswich', height: '178 cm', position: 'Goalkeeper', league: 'Championship' },
-  { _id: '29', name: 'Aluko', nationality: 'A', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
-  { _id: '29', name: 'Harness', nationality: 'H', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
-  { _id: '29', name: 'Edwards', nationality: 'E', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
+  { _id: '29', name: 'Baggott', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
+  { _id: '29', name: 'Chaplin', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
+  { _id: '29', name: 'Morsy', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
+  { _id: '29', name: 'Broadhead', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
+  { _id: '29', name: 'Burns', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
+  { _id: '29', name: 'Clarke', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
+  { _id: '29', name: 'Davis', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
+  { _id: '29', name: 'Walton', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Goalkeeper', league: 'Championship' },
+  { _id: '29', name: 'Aluko', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
+  { _id: '29', name: 'Harness', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
+  { _id: '29', name: 'Edwards', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
 
 
 
