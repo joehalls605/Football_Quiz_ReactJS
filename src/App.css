@@ -38,6 +38,11 @@
   }
 }
 
+.home-image {
+  margin-right: 8px; /* Optional: Add some spacing between text and image */
+  vertical-align: middle; /* Align the image vertically in the middle of the line */
+}
+
 .score-popup {
   position: fixed;
   top: 50%;

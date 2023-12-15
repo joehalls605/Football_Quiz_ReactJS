@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Game from './Game';
+import Css from '../App.css';
 
 // Homepage component
 const Homepage = ({ setGameStarted }) => {
@@ -31,12 +32,12 @@ const Homepage = ({ setGameStarted }) => {
           {/* Button for Premier League */}
           <button onClick={() => handleStartGame('Premier League')} className='bg-blue-500 font-mono text-white px-5 py-2 rounded transition-colors duration-300 hover:bg-blue-600 my-2'>
   Premier League
-  <img src='./public/Images/Premier.png' alt='Premier League' />
+  <img className="home-image" src='Images/Premier.png' alt='Premier League' />
 </button>
 
 <button onClick={() => handleStartGame('Championship (Ipswich Town)')} className='bg-blue-500 font-mono text-white px-5 py-2 rounded transition-colors duration-300 hover:bg-blue-600 my-2'>
   Ipswich
-  <img src='./public/Images/championship.png' alt='Championship' />
+  <img className="home-image" src='Images/championship.png' alt='Championship' />
 </button>
         </div>
       </main>
