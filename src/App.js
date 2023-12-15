@@ -50,7 +50,7 @@ const App = () => {
   // Function to start the game with a selected league
   const handleStartGame = (league) => {
     setSelectedLeague(league);
-    return <Game/> // This line seems to be unnecessary
+    setGameOver(false);
   };
 
   // Function to render different game screens based on conditions
@@ -58,7 +58,6 @@ const App = () => {
     // Show homepage if no league is selected
     if (!selectedLeague) {
       return <Homepage setGameStarted={handleStartGame}/>;
-      console.log("Hi"); // This line won't be executed due to the previous return statement
     }
 
     // Show end-game screen if the game is over

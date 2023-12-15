@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useGameContext } from '../Context/GameContext';
 import Question from '../Components/Question';
 import Timer from '../Components/Timer';
-import footballersData from '../Data/FootballerData';
 import Score from '../Components/Score';
-import 'tailwindcss/tailwind.css';
+import footballersData from '../Data/FootballerData';
 
 const Game = () => {
   const {
@@ -16,10 +15,6 @@ const Game = () => {
     selectedLeague,
     handleTimerFinish
   } = useGameContext();
-
-  useEffect(() => {
-    // Implement your logic here when the component mounts or the context values change
-  }, [currentQuestionIndex, gameOver, score, selectedLeague]);
 
   // Get the current question based on the currentQuestionIndex
   const currentQuestion = footballersData[currentQuestionIndex];
@@ -34,7 +29,7 @@ const Game = () => {
       {/* Container div with padding for the Question component */}
       <div className="p-4">
         <Question
-          selectedLeague={selectedLeague} // holds value, premier league or championship
+          selectedLeague={selectedLeague}
           questionData={currentQuestion}
           handleAnswer={handleAnswer}
           footballersData={footballersData}
