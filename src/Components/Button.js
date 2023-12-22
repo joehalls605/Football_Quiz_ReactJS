@@ -9,7 +9,7 @@ const Button = ({ name, correctAnswer, handleAnswer, setAnswerCorrect }) => {
   const [isCorrect, setIsCorrect] = useState(false);
 
   // Create an audio element for correct answer sound
-  const correctAnswerAudio = new Audio(correctAnswerSound);
+  // const correctAnswerAudio = new Audio(correctAnswerSound);
 
   // useEffect to handle button selection and answer correctness
   useEffect(() => {
@@ -20,7 +20,7 @@ const Button = ({ name, correctAnswer, handleAnswer, setAnswerCorrect }) => {
 
       // Play correct answer sound if the answer is correct
       if (isCorrectAnswer) {
-        correctAnswerAudio.play();
+        // correctAnswerAudio.play();
       }
 
       // Delay for 800ms, then proceed to next question
@@ -38,8 +38,8 @@ const Button = ({ name, correctAnswer, handleAnswer, setAnswerCorrect }) => {
   };
 
 // Determine button classes based on selection and correctness
-const buttonClass = `bg-gray-900 text-xl text-white px-4 py-2 rounded transition-all duration-300 focus:outline-none focus:ring focus:border-blue-300 ${
-  isSelected ? (isCorrect ? 'bg-green-500 border-4 border-green-500' : 'bg-red-500 border-4 border-red-700') : ''
+const buttonClass = `bg-gray-900 border text-xl text-white px-4 py-2 rounded transition-all duration-300 focus:outline-none focus:ring focus:border-blue-700 ${
+  isSelected ? (isCorrect ? 'bg-green-500 border-4 border-green-800' : 'bg-red-500 border-4 border-red-700') : ''
 }`;
 
 const hoverClass = `hover:bg-blue-800`;

@@ -26,19 +26,26 @@ const Homepage = ({ setGameStarted }) => {
           {/* Button for Premier League */}
           <button
             onClick={() => handleStartGame('Premier League')}
-            className='bg-blue-500 font-mono text-white flex items-center justify-center px-10 py-4 rounded transition-colors duration-300 hover:bg-blue-600 my-2 text-2xl'
-          >
+            className='bg-gray-300 border-black flex items-center justify-center px-10 py-4 rounded transition-colors duration-300  hover:bg-gray-900 hover:text-white my-2 text-2xl'>
             <span className="mr-4">Premier League</span>
             <img className="home-image" src='Images/Premier.png' alt='Premier League' />
           </button>
 
-          {/* Button for Championship (Ipswich Town) */}
+          {/* Button for Championship*/}
           { <button
             onClick={() => handleStartGame('Championship')}
-            className='bg-blue-500 font-mono text-white flex items-center justify-center px-10 py-4 rounded transition-colors duration-300 hover:bg-blue-600 my-2 text-2xl'
+            className='bg-gray-300 border-black text-black flex items-center justify-center px-10 py-4 rounded transition-colors duration-300 hover:bg-gray-900 hover:text-white my-2 text-2xl'
           >
             <span className="mr-4">Championship</span>
             <img className="home-image" src='Images/championship.png' alt='Championship' />
+          </button> }
+            {/* Button for La Liga*/}
+            { <button
+            onClick={() => handleStartGame('LaLiga')}
+            className='bg-gray-300 border-black text-black flex items-center justify-center px-10 py-4 rounded transition-colors duration-300 hover:bg-gray-900 hover:text-white my-2 text-2xl'
+          >
+            <span className="mr-4">LaLiga</span>
+            <img className="home-image" src='Images/laliga.png' alt='Championship' />
           </button> }
         </div>
       </main>

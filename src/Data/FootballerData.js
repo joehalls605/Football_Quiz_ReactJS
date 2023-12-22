@@ -62,7 +62,30 @@ const footballersData = [
   { _id: '57', name: 'Ward', nationality: 'Wales', club: 'Leicester',  position: 'Goalkeeper', league: 'Championship' },
   { _id: '57', name: 'Rushworth', nationality: 'England', club: 'Swansea',  position: 'Goalkeeper', league: 'Championship' },
 
+  { _id: '61', name: 'Modric', nationality: 'Croatia', club: 'Real Madrid', position: 'Midfielder', league: 'LaLiga' },
+  { _id: '62', name: 'De Jong', nationality: 'Netherlands', club: 'Barcelona', position: 'Midfielder', league: 'LaLiga' },
+  { _id: '65', name: 'Griezmann', nationality: 'France', club: 'Atletico Madrid', position: 'Forward', league: 'LaLiga' },
+  { _id: '66', name: 'Courtois', nationality: 'Belgium', club: 'Real Madrid', position: 'Goalkeeper', league: 'LaLiga' },
+  { _id: '67', name: 'Kroos', nationality: 'Germany', club: 'Real Madrid', position: 'Midfielder', league: 'LaLiga' },
+  { _id: '70', name: 'Oblak', nationality: 'Slovenia', club: 'Atletico Madrid', position: 'Goalkeeper', league: 'LaLiga' },
+  { _id: '72', name: 'Nacho', nationality: 'Spain', club: 'Real Madrid', position: 'Defender', league: 'LaLiga' },
+  { _id: '73', name: 'Kounde', nationality: 'France', club: 'Barcelona', position: 'Defender', league: 'LaLiga' },
+  { _id: '74', name: 'Vazquez', nationality: 'Spain', club: 'Real Madrid', position: 'Forward', league: 'LaLiga' },
+  { _id: '75', name: 'Fernandez', nationality: 'Argentina', club: 'Atletico Madrid', position: 'Midfielder', league: 'LaLiga' },
+  { _id: '76', name: 'Llorente', nationality: 'Spain', club: 'Atletico Madrid', position: 'Midfielder', league: 'LaLiga' },
+  { _id: '85', name: 'Vinicius', nationality: 'Brazil', club: 'Real Madrid', position: 'Forward', league: 'LaLiga' },
+  { _id: '86', name: 'Pedri', nationality: 'Spain', club: 'Barcelona', position: 'Midfielder', league: 'LaLiga' },
+  { _id: '86', name: 'Bellingham', nationality: 'Spain', club: 'Real Madrid', position: 'Midfielder', league: 'LaLiga' },
+  { _id: '86', name: 'Alaba', nationality: 'Switzerland', club: 'Real Madrid', position: 'Defender', league: 'LaLiga' },
+  { _id: '86', name: 'Felix', nationality: 'Spain', club: 'Barcelona', position: 'Forward', league: 'LaLiga' },
+  { _id: '86', name: 'Zubeldia', nationality: 'Real Sociedad', club: 'Barcelona', position: 'Defender', league: 'LaLiga' },
+  { _id: '86', name: 'Hermoso', nationality: 'Spain', club: 'Atletico Madrid', position: 'Defender', league: 'LaLiga' },
 
+  // ... add more La Liga players as needed
+  
+
+
+  
 
 
 
