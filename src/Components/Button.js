@@ -37,19 +37,22 @@ const Button = ({ name, correctAnswer, handleAnswer, setAnswerCorrect }) => {
     setSelected(true);
   };
 
-  // Determine button classes based on selection and correctness
-  const buttonClass = `bg-gray-900 text-xl text-white px-4 py-2 rounded transition-colors duration-300 hover:bg-blue-700 ${
-    isSelected ? (isCorrect ? 'bg-green-500' : 'bg-red-500') : ''
-  }`;
+// Determine button classes based on selection and correctness
+const buttonClass = `bg-gray-900 text-xl text-white px-4 py-2 rounded transition-all duration-300 focus:outline-none focus:ring focus:border-blue-300 ${
+  isSelected ? (isCorrect ? 'bg-green-500 border-4 border-green-500' : 'bg-red-500 border-4 border-red-700') : ''
+}`;
 
-  // Render the Button component
-  return (
-    <div>
-      <button className={`${buttonClass} w-60 h-40 text-lg`} onClick={handleClick} disabled={isSelected}>
-        {name}
-      </button>
-    </div>
-  );
+const hoverClass = `hover:bg-blue-800`;
+
+// Render the Button component
+return (
+  <div>
+    <button className={`${buttonClass} ${hoverClass} w-60 h-40 text-lg`} onClick={handleClick} disabled={isSelected}>
+      {name}
+    </button>
+  </div>
+);
+
 };
 
 export default Button;
