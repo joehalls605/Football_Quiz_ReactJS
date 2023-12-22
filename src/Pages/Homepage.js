@@ -23,7 +23,8 @@ const Homepage = ({ setGameStarted }) => {
       <main className='flex-grow flex flex-col items-center p-10'>
         <h2 className='text-2xl py-6 font-mono'>Choose your league</h2>
         <div className='flex space-x-4'>
-          {/* Button for Premier League */}
+          {/* Buttons for different leagues */}
+          {/* Premier League */}
           <button
             onClick={() => handleStartGame('Premier League')}
             className='bg-gray-300 border-black flex items-center justify-center px-10 py-4 rounded transition-colors duration-300  hover:bg-gray-900 hover:text-white my-2 text-2xl'>
@@ -31,23 +32,28 @@ const Homepage = ({ setGameStarted }) => {
             <img className="home-image" src='Images/Premier.png' alt='Premier League' />
           </button>
 
-          {/* Button for Championship*/}
-          { <button
+          {/* Championship */}
+          <button
             onClick={() => handleStartGame('Championship')}
             className='bg-gray-300 border-black text-black flex items-center justify-center px-10 py-4 rounded transition-colors duration-300 hover:bg-gray-900 hover:text-white my-2 text-2xl'
           >
             <span className="mr-4">Championship</span>
             <img className="home-image" src='Images/championship.png' alt='Championship' />
-          </button> }
-            {/* Button for La Liga*/}
-            { <button
+          </button>
+
+          {/* La Liga */}
+          <button
             onClick={() => handleStartGame('LaLiga')}
             className='bg-gray-300 border-black text-black flex items-center justify-center px-10 py-4 rounded transition-colors duration-300 hover:bg-gray-900 hover:text-white my-2 text-2xl'
           >
             <span className="mr-4">LaLiga</span>
-            <img className="home-image" src='Images/laliga.png' alt='Championship' />
-          </button> }
+            <img className="home-image" src='Images/laliga.png' alt='LaLiga' />
+          </button>
         </div>
+
+        {/* Background image */}
+        <img src='Images/background.png' alt='background'  />
+
       </main>
 
       {/* Footer section */}
