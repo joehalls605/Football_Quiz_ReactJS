@@ -12,11 +12,7 @@ const Homepage = ({ setGameStarted }) => {
         <div>
           <h1 className='text-xl py-2 '>Football Player Quiz</h1>
         </div>
-        <nav>
-          <ul className='flex items-center space-x-4'>
-            <li className='ml-2 '>Scoreboard</li>
-          </ul>
-        </nav>
+       
       </header>
 
       {/* Main content section */}
