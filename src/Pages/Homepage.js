@@ -33,13 +33,13 @@ const Homepage = ({ setGameStarted }) => {
           </button>
 
           {/* Button for Championship (Ipswich Town) */}
-          {/* <button
-            onClick={() => handleStartGame('Championship (Ipswich Town)')}
+          { <button
+            onClick={() => handleStartGame('Championship')}
             className='bg-blue-500 font-mono text-white flex items-center justify-center px-10 py-4 rounded transition-colors duration-300 hover:bg-blue-600 my-2 text-2xl'
           >
-            <span className="mr-4">Ipswich</span>
+            <span className="mr-4">Championship</span>
             <img className="home-image" src='Images/championship.png' alt='Championship' />
-          </button> */}
+          </button> }
         </div>
       </main>
 

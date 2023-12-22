@@ -29,17 +29,52 @@ const footballersData = [
   { _id: '27', name: 'Mac Allister', nationality: 'Argentina', position: 'Midfielder', league: 'Premier League', club: 'Liverpool'},
   { _id: '28', name: 'Eriksen', nationality: 'Denmark', position: 'Midfielder', league: 'Premier League', club: 'Manchester United'},
   
-  { _id: '29', name: 'Baggott', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
-  { _id: '29', name: 'Chaplin', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
-  { _id: '29', name: 'Morsy', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
-  { _id: '29', name: 'Broadhead', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
-  { _id: '29', name: 'Burns', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
-  { _id: '29', name: 'Clarke', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
-  { _id: '29', name: 'Davis', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
-  { _id: '29', name: 'Walton', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Goalkeeper', league: 'Championship' },
-  { _id: '29', name: 'Aluko', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Forward', league: 'Championship' },
-  { _id: '29', name: 'Harness', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Midfielder', league: 'Championship' },
-  { _id: '29', name: 'Edwards', nationality: 'England', club: 'Ipswich', height: '178 cm', position: 'Defender', league: 'Championship' },
+  { _id: '29', name: 'Baggott', nationality: 'England', club: 'Ipswich',  position: 'Defender', league: 'Championship' },
+  { _id: '30', name: 'Chaplin', nationality: 'England', club: 'Ipswich',  position: 'Midfielder', league: 'Championship' },
+  { _id: '31', name: 'Morsy', nationality: 'England', club: 'Ipswich',  position: 'Midfielder', league: 'Championship' },
+  { _id: '32', name: 'Broadhead', nationality: 'England', club: 'Ipswich',  position: 'Forward', league: 'Championship' },
+  { _id: '33', name: 'Burns', nationality: 'England', club: 'Ipswich',  position: 'Forward', league: 'Championship' },
+  { _id: '34', name: 'Clarke', nationality: 'England', club: 'Ipswich',  position: 'Defender', league: 'Championship' },
+  { _id: '35', name: 'Davis', nationality: 'England', club: 'Ipswich',  position: 'Defender', league: 'Championship' },
+  { _id: '36', name: 'Walton', nationality: 'England', club: 'Ipswich',  position: 'Goalkeeper', league: 'Championship' },
+  { _id: '37', name: 'Aluko', nationality: 'England', club: 'Ipswich',  position: 'Forward', league: 'Championship' },
+  { _id: '38', name: 'Harness', nationality: 'England', club: 'Ipswich',  position: 'Midfielder', league: 'Championship' },
+  { _id: '39', name: 'Edwards', nationality: 'England', club: 'Ipswich',  position: 'Defender', league: 'Championship' },
+  { _id: '40', name: 'Strujik', nationality: 'Netherlands', club: 'Leeds',  position: 'Defender', league: 'Championship' },
+  { _id: '41', name: 'Meslier', nationality: 'France', club: 'Leeds',  position: 'Goalkeeper', league: 'Championship' },
+  { _id: '42', name: 'Armstrong', nationality: 'England', club: 'Southampton',  position: 'Striker', league: 'Championship' },
+  { _id: '43', name: 'Gnoto', nationality: 'Italy', club: 'Leeds',  position: 'Forward', league: 'Championship' },
+  { _id: '44', name: 'Justin', nationality: 'England', club: 'Leicester',  position: 'Forward', league: 'Championship' },
+  { _id: '45', name: 'Adams', nationality: 'England', club: 'Southampton',  position: 'Forward', league: 'Championship' },
+  { _id: '46', name: 'Adams', nationality: 'England', club: 'Southampton',  position: 'Forward', league: 'Championship' },
+  { _id: '47', name: 'Patterson', nationality: 'England', club: 'Sunderland',  position: 'Goalkeeper', league: 'Championship' },
+  { _id: '48', name: 'Wharton', nationality: 'England', club: 'Blackburn',  position: 'Midfielder', league: 'Championship' },
+  { _id: '49', name: 'Grimes', nationality: 'England', club: 'Swansea',  position: 'Midfielder', league: 'Championship' },
+  { _id: '50', name: 'Nunez', nationality: 'Chile', club: 'Norwich',  position: 'Midfielder', league: 'Championship' },
+  { _id: '51', name: 'Dolan', nationality: 'England', club: 'Blackburn',  position: 'Defender', league: 'Championship' },
+  { _id: '52', name: 'McNair', nationality: 'Northern Ireland', club: 'Middlesborough',  position: 'Defender', league: 'Championship' },
+  { _id: '53', name: 'Greaves', nationality: 'England', club: 'Hull',  position: 'Defender', league: 'Championship' },
+  { _id: '54', name: 'Doyle', nationality: 'England', club: 'Leicester',  position: 'Defender', league: 'Championship' },
+  { _id: '55', name: 'Stewart', nationality: 'Scotland', club: 'Leicester',  position: 'Forward', league: 'Championship' },
+  { _id: '56', name: 'Mitchell', nationality: 'England', club: 'Millwall',  position: 'Midfielder', league: 'Championship' },
+  { _id: '57', name: 'Burger', nationality: 'Netherlands', club: 'Stoke',  position: 'Midfielder', league: 'Championship' },
+  { _id: '57', name: 'Rodon', nationality: 'Wales', club: 'Leeds',  position: 'Defender', league: 'Championship' },
+  { _id: '57', name: 'Ward', nationality: 'Wales', club: 'Leicester',  position: 'Goalkeeper', league: 'Championship' },
+  { _id: '57', name: 'Rushworth', nationality: 'England', club: 'Swansea',  position: 'Goalkeeper', league: 'Championship' },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
