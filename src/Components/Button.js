@@ -38,11 +38,12 @@ const Button = ({ name, correctAnswer, handleAnswer, setAnswerCorrect }) => {
   };
 
 // Determine button classes based on selection and correctness
-const buttonClass = `bg-gray-900 border text-xl text-white px-4 py-2 rounded transition-all duration-300 focus:outline-none focus:ring focus:border-blue-700 ${
-  isSelected ? (isCorrect ? 'bg-green-500 border-4 border-green-800' : 'bg-red-500 border-4 border-red-700') : ''
+const buttonClass = `bg-gray-800 border text-xl text-white px-4 py-2 rounded transition-all duration-300 focus:outline-none focus:ring focus:border-gray-700 ${
+  isSelected ? (isCorrect ? 'bg-green-500 border-8 border-green-500' : 'bg-red-500 border-8 border-red-700') : ''
 }`;
 
-const hoverClass = `hover:bg-blue-800`;
+const hoverClass = `hover:bg-gray-700 hover:text-white`;
+
 
 // Render the Button component
 return (

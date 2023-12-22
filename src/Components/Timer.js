@@ -35,15 +35,15 @@ const Timer = ({ setGameOver, gameOver }) => {
 
   return (
     <div>
-      <div className='flex flex-col items-center space-y-4'>
-        <div className='relative w-28 h-1 bg-gray-300'>
+      <div className='flex flex-col items-center space-y-4 pt-8'>
+        <div className='relative w-48 h-1 bg-gray-300'>
           <div
             className={`absolute top-0 left-0 h-full ${timerBarColor}`}
             style={{ width: `${progress}%` }}
           ></div>
         </div>
       </div>
-      <div className='flex text-md justify-center p-4 font-mono'>
+      <div className='flex text-md justify-center p-4 '>
         {/* {secondsLeft} */}
       </div>
     </div>

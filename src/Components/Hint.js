@@ -3,15 +3,15 @@ import 'tailwindcss/tailwind.css';
 
 const Hint = ({ nationality, position, club }) => {
   return (
-    <div className='font-semibold text-xl p-4'>
-       <p className='mr-5'>
-        <span className='text-blue-500 font-semibold font-mono'>Team:</span> {club}
+    <div className='font-semibold text-xl p-10'>
+      <p className='mb-4'>
+        <span className='text-blue-500 font-semibold'>Team: </span>{club}
       </p>
-      <p className='mr-5'>
-        <span className='text-blue-500 font-semibold font-mono'>Position:</span> {position}
+      <p className='mb-4'>
+        <span className='text-blue-500 font-semibold'>Position: </span>{position}
       </p>
-      <p className='mr-5'>
-        <span className='text-blue-500 font-semibold font-mono'>Nationality:</span> {nationality}
+      <p className='mb-4'>
+        <span className='text-blue-500 font-semibold'>Nationality: </span>{nationality}
       </p>
     </div>
   );

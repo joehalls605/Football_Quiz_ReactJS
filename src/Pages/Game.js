@@ -23,9 +23,7 @@ const Game = () => {
     <div className="p-2">
       <h1 className="p-4">Guess the footballer</h1>
       {/* Container div with padding for the Score component */}
-      <div className="p-4">
-        <Score score={score} />
-      </div>
+      
       {/* Container div with padding for the Question component */}
       <div className="p-4">
         <Question
@@ -37,7 +35,10 @@ const Game = () => {
       </div>
       {/* Container div with padding for the Timer component */}
       <div className="p-4">
-        <Timer setGameOver={setGameOver} gameOver={gameOver} handleTimerFinish={handleTimerFinish} />
+        {/* <Timer setGameOver={setGameOver} gameOver={gameOver} handleTimerFinish={handleTimerFinish} /> */}
+      </div>
+      <div className="p-4">
+        {/* <Score score={score} /> */}
       </div>
     </div>
   );
