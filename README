@@ -1,0 +1,23 @@
+Football Player Quiz App
+
+This is a React-based Football Player Quiz application where users can test their knowledge of football players from different leagues. 
+The app presents questions about football players, and users need to select the correct player from multiple choices.
+
+Key Components and Hooks
+App.js
+The main component that orchestrates the game. It manages state for the current question, score, game over status, selected league, answer correctness, and score visibility.
+
+Homepage.js
+Displays the main menu where users can choose a football league to start the quiz.
+
+useFootballerButtons.js
+A custom hook that generates footballer buttons for a given question. It shuffles the buttons and ensures the correct footballer is among the choices.
+
+Question.js
+Displays the question and answer buttons. Manages state for the score and game over status. Uses the useFootballerButtons hook.
+
+Score.js
+Displays the user's score during the game.
+
+Timer.js
+A timer component that counts down during the game. Changes color based on remaining time. It plays an audio file when the timer is running out.

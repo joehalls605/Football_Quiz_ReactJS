@@ -3,7 +3,7 @@ import 'tailwindcss/tailwind.css';
 
 const Hint = ({ nationality, position, club }) => {
   return (
-    <div className='font-semibold text-xl p-10'>
+    <div className='font-semibold text-2xl p-10'>
       <p className='mb-4'>
         <span className='text-blue-500 font-semibold'>Team: </span>{club}
       </p>

@@ -84,7 +84,7 @@ const App = () => {
       <div>
         <header className='bg-gray-100 text-white p-4 flex justify-between items-center'>
           <div>
-            <button className='text-sm bg-gray-100 text-black px-4 py-2 rounded mx-2 font-semibold ' onClick={handleMainMenu}>
+            <button className='text-lg bg-gray-100 text-black px-4 py-2 rounded mx-2 font-semibold ' onClick={handleMainMenu}>
               Quit
             </button>
           </div>
