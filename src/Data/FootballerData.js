@@ -1,10 +1,10 @@
 const footballersData = [
   // Players from Premier League
-  { _id: '1', name: 'Kevin De Bruyne', nationality: 'Belgium', position: 'Midfielder', league: 'Premier League', club: 'Manchester City' },
+  { _id: '1', name: 'De Bruyne', nationality: 'Belgium', position: 'Midfielder', league: 'Premier League', club: 'Manchester City' },
   { _id: '2', name: 'Antony', nationality: 'Brazil', position: 'Forward', league: 'Premier League', club: 'Manchester United' },
-  { _id: '3', name: 'Mohamed Salah', nationality: 'Egypt', position: 'Forward', league: 'Premier League', club: 'Liverpool' },
-  { _id: '4', name: 'Bruno Fernandes', nationality: 'Portugal', position: 'Midfielder', league: 'Premier League', club: 'Manchester United' },
-  { _id: '5', name: 'Jack Grealish', nationality: 'England', position: 'Midfielder', league: 'Premier League', club: 'Manchester City' },
+  { _id: '3', name: 'Salah', nationality: 'Egypt', position: 'Forward', league: 'Premier League', club: 'Liverpool' },
+  { _id: '4', name: 'Fernandes', nationality: 'Portugal', position: 'Midfielder', league: 'Premier League', club: 'Manchester United' },
+  { _id: '5', name: 'Grealish', nationality: 'England', position: 'Midfielder', league: 'Premier League', club: 'Manchester City' },
   { _id: '6', name: 'Jota', nationality: 'Portugal', position: 'Forward', league: 'Premier League', club: 'Liverpool' },
   { _id: '7', name: 'Nunez', nationality: 'Uruguay', position: 'Forward', league: 'Premier League', club: 'Liverpool' },
   { _id: '8', name: 'Bissouma', nationality: 'Mali', position: 'Midfield', league: 'Premier League', club: 'Tottenham' },

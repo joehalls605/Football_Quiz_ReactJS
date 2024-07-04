@@ -46,21 +46,18 @@ const App = () => {
 
     if (gameOver) {
       return (
-        <div>
-          <header className='bg-gray-900 text-white p-4 flex justify-between items-center'>
-            <div>
-              <h1 className='text-xl py-2 '>Football Player Quiz</h1>
-            </div>
-            <nav></nav>
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+          <header className='bg-gray-900 text-white w-full py-4'>
+            <h1 className='text-xl text-center'>Football Player Quiz</h1>
           </header>
 
-          <div className="flex flex-col items-center ">
-            <h2 className="text-3xl pt-10">Time is up!</h2>
-            <p className="text-3xl p-5 align-center">You scored:</p>
-            <p className="text-3xl p-5 align-center">{score}</p>
-            <div className='pt-10 flex flex-row items-center p-4 align-center'>
+          <div className="flex flex-col items-center mt-4">
+            <h2 className="text-3xl">Time is up!</h2>
+            <p className="text-3xl mt-4">You scored:</p>
+            <p className="text-3xl">{score}</p>
+            <div className='mt-8'>
               <button
-                className="bg-gray-800 text-white px-4 py-2  mb-3 rounded transition-colors duration-300 hover:bg-blue-600 w-52 h-20"
+                className="bg-gray-800 text-white px-4 py-2 rounded transition-colors duration-300 hover:bg-blue-600"
                 onClick={handleMainMenu}
               >
                 Main Menu
@@ -81,34 +78,31 @@ const App = () => {
     const currentQuestion = filteredFootballersData[currentQuestionIndex];
 
     return (
-      <div>
-        <header className='bg-gray-100 text-white p-4 flex justify-between items-center'>
-          <div>
-            <button className='text-lg bg-gray-100 text-black px-4 py-2 rounded mx-2 font-semibold ' onClick={handleMainMenu}>
-              Quit
-            </button>
-          </div>
-          <nav>
-            <ul className='flex items-center space-x-4'></ul>
-          </nav>
+      <div className="min-h-screen flex flex-col items-center bg-gray-100">
+        <header className='bg-gray-900 text-white w-full py-4'>
+          <button className='text-lg bg-gray-900 text-white px-4 py-2 rounded ml-4 font-semibold' onClick={handleMainMenu}>
+            Quit
+          </button>
         </header>
 
         <GameProvider>
-          <Question
-            questionData={currentQuestion}
-            handleAnswer={handleAnswer}
-            footballersData={filteredFootballersData}
-            selectedLeague={selectedLeague}
-            answerCorrect={answerCorrect}
-            setAnswerCorrect={setAnswerCorrect}
-          />
-          {answerCorrect && (
-            <div className='flex flex-col items-center'>
-              {/* Content for when the answer is correct */}
-            </div>
-          )}
-          <Timer setGameOver={setGameOver} gameOver={gameOver} />
-          <Score score={score} />
+          <div className="flex flex-col items-center justify-center flex-1">
+            <Question
+              questionData={currentQuestion}
+              handleAnswer={handleAnswer}
+              footballersData={filteredFootballersData}
+              selectedLeague={selectedLeague}
+              answerCorrect={answerCorrect}
+              setAnswerCorrect={setAnswerCorrect}
+            />
+            {answerCorrect && (
+              <div className='flex flex-col items-center mt-4'>
+                {/* Content for when the answer is correct */}
+              </div>
+            )}
+            <Timer setGameOver={setGameOver} gameOver={gameOver} />
+            <Score score={score} />
+          </div>
         </GameProvider>
       </div>
     );

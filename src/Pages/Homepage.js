@@ -17,7 +17,7 @@ const Homepage = ({ setGameStarted }) => {
       <main className='flex-grow flex flex-col md:flex-row items-center p-10 justify-center'>
 
         {/* Left column for "Pick your league" and buttons */}
-        <div className='flex flex-col items-center md:mr-8 '>
+        <div className='flex flex-col items-center md:mr-8 mb-12'>
           <h2 className='text-3xl font-bold py-8 text-white-400'>Choose your league</h2>
           <div className='flex flex-col space-y-4'>
             {/* Buttons for different leagues */}
