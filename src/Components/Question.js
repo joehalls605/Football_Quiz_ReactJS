@@ -1,4 +1,3 @@
-// Question.js
 import React, { useState } from 'react';
 import 'tailwindcss/tailwind.css';
 import Hint from './Hint';
@@ -29,9 +28,9 @@ const Question = ({ questionData, handleAnswer, footballersData, selectedLeague,
     if (gameOver) {
       return (
         // Game over screen
-        <div className="flex flex-col items-center">
-          <h2 className="text-3xl p-5">Game Over!</h2>
-          <p className="text-3xl p-5">You scored: {score}</p>
+        <div className="flex flex-col items-center p-4 md:p-8">
+          <h2 className="text-2xl md:text-3xl p-4">Game Over!</h2>
+          <p className="text-2xl md:text-3xl p-4">You scored: {score}</p>
           {/* Implement your restart game logic */}
         </div>
       );
@@ -39,32 +38,29 @@ const Question = ({ questionData, handleAnswer, footballersData, selectedLeague,
 
     // Main game content
     return (
-      <div>
-        <div className="flex flex-col items-center ">
-          {correctFootballer && (
-            // Hint component
-            <Hint
-              nationality={correctFootballer.nationality}
-              position={correctFootballer.position}
-              club={correctFootballer.club}
+      <div className="flex flex-col items-center p-4 md:p-8">
+        {correctFootballer && (
+          // Hint component
+          <Hint
+            nationality={correctFootballer.nationality}
+            position={correctFootballer.position}
+            club={correctFootballer.club}
+          />
+        )}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-10 mt-4">
+          {/* Map through footballer buttons */}
+          {footballerButtons.map((footballer, index) => (
+            // Button component
+            <Button
+              key={index}
+              name={footballer.name}
+              correctAnswer={correctFootballer.name}
+              setScore={setScore}
+              score={score}
+              handleAnswer={handleAnswer}
+              setAnswerCorrect={setAnswerCorrect}
             />
-          )}
-          <div className="grid grid-cols-2 gap-10">
-            {/* Map through footballer buttons */}
-            {footballerButtons.map((footballer, index) => (
-              // Button component
-              <Button
-                key={index}
-                name={footballer.name}
-                correctAnswer={correctFootballer.name}
-                setScore={setScore}
-                score={score}
-                handleAnswer={handleAnswer}
-                setAnswerCorrect={setAnswerCorrect}
-              />
-            ))}
-          </div>
-
+          ))}
         </div>
       </div>
     );

@@ -13,7 +13,7 @@ const Homepage = ({ setGameStarted }) => {
       <Header/>
     
       <div className='flex-grow flex flex-col md:flex-row items-center mb-4 mt-9 justify-center'>
-      <h2 className='text-2xl mt-5 font-bold'>
+      <h2 className='text-2xl font-bold text-white-400 mt-1 mx-4 md:mx-0'>
         Time to test and enhance your football knowledge 💡
       </h2>
           </div>
@@ -22,8 +22,8 @@ const Homepage = ({ setGameStarted }) => {
         
         {/* Left column for "Pick your league" and buttons */}
         <div className='flex flex-col items-center md:mr-8 mb-12'>
-          <h2 className='text-2xl font-bold text-white-400 mt-1'>When you're ready to start the game, select your league.</h2>
-          <div className='flex flex-col space-y-4 mt-8'>
+          <h2 className='text-2xl font-bold text-white-400 mt-1 mx-4 md:mx-0'>When you're ready to start the game, select your league.</h2>
+          <div className='flex flex-col space-y-4 mt-8 md:mx-0'>
             {/* Buttons for different leagues */}
             {/* Premier League */}
             <button
