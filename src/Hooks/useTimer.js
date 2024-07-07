@@ -1,4 +1,4 @@
-// useTimer.js
+// useTimer.js for whenever timer functionality needed.
 import { useEffect, useState } from 'react';
 
 // Custom hook for a countdown timer

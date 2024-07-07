@@ -9,7 +9,7 @@ import useTimer from '../Hooks/useTimer';
 
 // Question component
 const Question = ({ questionData, handleAnswer, footballersData, selectedLeague, answerCorrect, setAnswerCorrect, }) => {
-  // Use custom hook to manage footballer buttons and correct footballer info
+  // Custom hook to manage footballer buttons and correct footballer info
   const { correctFootballer, footballerButtons } = useFootballerButtons(footballersData, selectedLeague, questionData);
 
   // State for score and game over

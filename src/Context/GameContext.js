@@ -1,3 +1,5 @@
+// Game Context implementation
+
 import React, { createContext, useContext, useState } from 'react';
 
 const GameContext = createContext();

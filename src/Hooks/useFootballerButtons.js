@@ -1,4 +1,4 @@
-// useFootballerButtons.js
+// useFootballerButtons.js used to implement footballer button answers
 import { useEffect, useState } from 'react';
 
 // Custom hook to generate footballer buttons for a given question
@@ -24,7 +24,7 @@ const useFootballerButtons = (footballersData, selectedLeague, questionData) => 
             footballer.name !== correctFootballer.name
         )
         .sort(() => Math.random() - 0.5);
-        
+
       // Combine the correct footballer with three shuffled footballers to form the buttons list
       const selectedFootballers = [correctFootballer, ...shuffledFootballers.slice(0, 3)];
       // Shuffle the selected footballers again to randomize the order of buttons

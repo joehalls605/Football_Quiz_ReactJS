@@ -1,3 +1,5 @@
+// Timer component that defines the timer functionality and appearance
+
 import React, { useEffect, useState } from 'react';
 import countdown from '../Audio/countdown.wav';
 

@@ -8,6 +8,8 @@ import Score from './Components/Score';
 import Header from './Components/Header';
 
 const App = () => {
+
+  // App state set up
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
@@ -15,6 +17,7 @@ const App = () => {
   const [answerCorrect, setAnswerCorrect] = useState(false);
   const [scoreVisible, setScoreVisible] = useState(false);
 
+  // Handle user answer input
   const handleAnswer = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
@@ -22,6 +25,7 @@ const App = () => {
     setCurrentQuestionIndex(currentQuestionIndex + 1);
   };
 
+  // Setting the main menu state
   const handleMainMenu = () => {
     setCurrentQuestionIndex(0);
     setScore(0);
@@ -30,16 +34,19 @@ const App = () => {
     setSelectedLeague('');
   };
 
+  // Handle timer finish
   const handleTimerFinish = () => {
     setGameOver(true);
     setScoreVisible(true);
   };
 
+  // Handle start game
   const handleStartGame = (league) => {
     setSelectedLeague(league);
     setGameOver(false);
   };
 
+  // Rendering the application
   const renderGame = () => {
     if (!selectedLeague) {
       return <Homepage setGameStarted={handleStartGame} />;
@@ -66,6 +73,7 @@ const App = () => {
       );
     }
 
+    // filtering the footballer data
     const filteredFootballersData = footballersData.filter((footballer) => footballer.league === selectedLeague);
 
     if (currentQuestionIndex >= filteredFootballersData.length) {
