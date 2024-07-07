@@ -5,7 +5,7 @@ The app presents questions about football players, and users need to select the 
 
 Key Components and Hooks
 App.js
-The main component that orchestrates the game. It manages state for the current question, score, game over status, selected league, answer correctness, and score visibility.
+The main component for the logic of the game. It manages state for the current question, score, game over status, selected league, answer correctness, and score visibility.
 
 Homepage.js
 Displays the main menu where users can choose a football league to start the quiz.

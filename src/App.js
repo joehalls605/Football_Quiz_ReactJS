@@ -5,6 +5,7 @@ import Question from './Components/Question';
 import Timer from './Components/Timer';
 import Homepage from './Pages/Homepage';
 import Score from './Components/Score';
+import Header from './Components/Header';
 
 const App = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -47,20 +48,17 @@ const App = () => {
     if (gameOver) {
       return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-          <header className='bg-gray-900 text-white w-full py-4'>
-            <h1 className='text-xl text-center'>Football Player Quiz</h1>
-          </header>
-
+     
           <div className="flex flex-col items-center mt-4">
-            <h2 className="text-3xl">Time is up!</h2>
-            <p className="text-3xl mt-4">You scored:</p>
-            <p className="text-3xl">{score}</p>
+            <h2 className="text-5xl">Full time! ⚽</h2>
+            <p className="text-3xl mt-9">Your score:</p>
+            <p className="text-3xl mt-2">{score}</p>
             <div className='mt-8'>
               <button
-                className="bg-gray-800 text-white px-4 py-2 rounded transition-colors duration-300 hover:bg-blue-600"
+                className="bg-gray-800 text-white text-xl px-4 py-2 rounded transition-colors duration-300 hover:bg-gray-900"
                 onClick={handleMainMenu}
               >
-                Main Menu
+                Back to Main Menu
               </button>
             </div>
           </div>
@@ -79,14 +77,13 @@ const App = () => {
 
     return (
       <div className="min-h-screen flex flex-col items-center bg-gray-100">
-        <header className='bg-gray-900 text-white w-full py-4'>
-          <button className='text-lg bg-gray-900 text-white px-4 py-2 rounded ml-4 font-semibold' onClick={handleMainMenu}>
+        <header className='bg-gray-900 text-white w-full py-4 bg-gradient-to-r from-sky-500 to-indigo-500'>
+          <button className='text-lg text-white px-4 py-2 rounded ml-4 font-semibold' onClick={handleMainMenu}>
             Quit
           </button>
         </header>
-
         <GameProvider>
-          <div className="flex flex-col items-center justify-center flex-1">
+          <div className="flex flex-col items-center justify-center flex-1 mb-8">
             <Question
               questionData={currentQuestion}
               handleAnswer={handleAnswer}

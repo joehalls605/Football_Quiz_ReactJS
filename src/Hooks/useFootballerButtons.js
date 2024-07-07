@@ -24,6 +24,7 @@ const useFootballerButtons = (footballersData, selectedLeague, questionData) => 
             footballer.name !== correctFootballer.name
         )
         .sort(() => Math.random() - 0.5);
+        
       // Combine the correct footballer with three shuffled footballers to form the buttons list
       const selectedFootballers = [correctFootballer, ...shuffledFootballers.slice(0, 3)];
       // Shuffle the selected footballers again to randomize the order of buttons

@@ -49,7 +49,7 @@ const Question = ({ questionData, handleAnswer, footballersData, selectedLeague,
               club={correctFootballer.club}
             />
           )}
-          <div className="grid grid-cols-2 gap-10 p-4">
+          <div className="grid grid-cols-2 gap-10">
             {/* Map through footballer buttons */}
             {footballerButtons.map((footballer, index) => (
               // Button component

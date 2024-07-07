@@ -37,18 +37,21 @@ const Button = ({ name, correctAnswer, handleAnswer, setAnswerCorrect }) => {
     setSelected(true);
   };
 
-// Determine button classes based on selection and correctness
-const buttonClass = `bg-gray-800 border text-xl text-white px-4 py-2 rounded transition-all duration-300 focus:outline-none focus:ring focus:border-gray-700 ${
-  isSelected ? (isCorrect ? 'bg-green-500 border-8 border-green-500' : 'bg-red-500 border-8 border-red-700') : ''
-}`;
-
-const hoverClass = `hover:bg-gray-700 hover:text-white`;
+  const buttonClass = `bg-gray-300 border-4 text-xxl text-black px-2 py-2 rounded transition-all duration-300 focus:outline-none focus:ring ${
+    isSelected 
+      ? (isCorrect 
+          ? 'border-green-500' 
+          : 'border-red-500')
+      : 'border-gray-800'
+  }`;
+  
+  const hoverClass = `hover:bg-gray-700 hover:text-white`;
 
 
 // Render the Button component
 return (
   <div>
-    <button className={`${buttonClass} ${hoverClass} w-60 h-40 text-lg`} onClick={handleClick} disabled={isSelected}>
+    <button className={`${buttonClass} ${hoverClass} w-80 h-60 text-2xl`} onClick={handleClick} disabled={isSelected}>
       {name}
     </button>
   </div>
