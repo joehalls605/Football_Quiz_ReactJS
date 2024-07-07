@@ -12,18 +12,18 @@ const Homepage = ({ setGameStarted }) => {
       {/* Header section */}
       <Header/>
     
-      <div className='flex-grow flex flex-col md:flex-row items-center mb-9 mt-9 justify-center'>
-      <h2 className='text-2xl mt-5'>
-      Welcome to Kick IQ, the ultimate platform to test and enhance your football knowledge ⚽
+      <div className='flex-grow flex flex-col md:flex-row items-center mb-4 mt-9 justify-center'>
+      <h2 className='text-2xl mt-5 font-bold'>
+        Time to test and enhance your football knowledge 💡
       </h2>
           </div>
       {/* Main content section */}
-      <main className='flex-grow flex flex-col md:flex-row items-center p-7 justify-center'>
+      <main className='flex-grow flex flex-col md:flex-row items-center justify-center'>
         
         {/* Left column for "Pick your league" and buttons */}
         <div className='flex flex-col items-center md:mr-8 mb-12'>
-          <h2 className='text-3xl font-bold py-8 text-white-400'>Choose your league</h2>
-          <div className='flex flex-col space-y-4'>
+          <h2 className='text-2xl font-bold text-white-400 mt-1'>When you're ready to start the game, select your league.</h2>
+          <div className='flex flex-col space-y-4 mt-8'>
             {/* Buttons for different leagues */}
             {/* Premier League */}
             <button
@@ -52,11 +52,6 @@ const Homepage = ({ setGameStarted }) => {
               <img className="home-image" src='Images/laliga.png' alt='LaLiga' />
             </button>
           </div>
-        </div>
-
-        {/* Right column for the background image */}
-        <div className='hidden md:block'>
-          <img src='Images/background.png' alt='background' />
         </div>
       </main>
     <Footer/>

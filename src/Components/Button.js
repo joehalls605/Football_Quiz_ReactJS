@@ -37,7 +37,7 @@ const Button = ({ name, correctAnswer, handleAnswer, setAnswerCorrect }) => {
     setSelected(true);
   };
 
-  const buttonClass = `bg-gray-300 border-4 text-xxl text-black px-2 py-2 rounded transition-all duration-300 focus:outline-none focus:ring ${
+  const buttonClass = `bg-gray-300 border-2 text-xxl text-black px-2 py-2 rounded transition-all duration-300 focus:outline-none focus:ring ${
     isSelected 
       ? (isCorrect 
           ? 'border-green-500' 

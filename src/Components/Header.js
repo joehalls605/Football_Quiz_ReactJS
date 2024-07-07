@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-gradient-to-r from-sky-500 to-indigo-500 text-white p-6 flex justify-center items-center">
       <div>
-      <h1 className="text-5xl  font-bold py-2 text-center black">Kick IQ</h1>
+      <h1 className="text-5xl font-bold py-2 text-center black italic">KICK IQ</h1>
       </div>
       <div className="flex items-end">
         <div className="ml-auto flex space-x-4">
