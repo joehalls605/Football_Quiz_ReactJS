@@ -7,17 +7,20 @@ Key Components and Hooks
 App.js
 The main component for the logic of the game. It manages state for the current question, score, game over status, selected league, answer correctness, and score visibility.
 
-Homepage.js
+- Homepage.js
 Displays the main menu where users can choose a football league to start the quiz.
 
-useFootballerButtons.js
+- useFootballerButtons.js
 A custom hook that generates footballer buttons for a given question. It shuffles the buttons and ensures the correct footballer is among the choices.
 
-Question.js
+- Question.js
 Displays the question and answer buttons. Manages state for the score and game over status. Uses the useFootballerButtons hook.
 
-Score.js
+- Score.js
 Displays the user's score during the game.
 
-Timer.js
-A timer component that counts down during the game. Changes color based on remaining time. It plays an audio file when the timer is running out.
+- Timer.js
+A timer component that counts down during the game. Changes colour based on remaining time. It plays an audio file when the timer is running out.
+
+- UserTime.js
+Provides timer logic for reuse anywhere else in the application.
